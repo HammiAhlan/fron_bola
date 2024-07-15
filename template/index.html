@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/main.js"></script>
+    <script type="module" src="../js/fetch.js"></script>
+    <script src="https://kit.fontawesome.com/06ee6847f3.js" crossorigin="anonymous"></script>
+    
+
+    <title>Foodball Responsive</title>
+</head>
+
+<body>
+  
+    <header>
+        <nav class="navbar flex justify-end bg-black text-white">
+            <ul class="flex items-center gap-4 h-10 mr-10">
+                <li><a href="#home" class="hover:text-sky-500">Home</a></li>
+                <li><a href="table.html" class="hover:text-sky-500">Table</a></li>
+                <li><a href="#about" class="hover:text-sky-500">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <header>
+    </header>
+    <main>
+        
+        <section class="container">
+            <div class="top-section">
+                <div class="top-part">
+                    <div class="game">
+                        <h1 class="top-text">
+                            SepakBola <br> ABC <br> 2024
+                        </h1>
+                        <button class="watch-button">
+                            <a target="_blank" href=""></a>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="game">
+                        <img src="../images/banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container mx-auto mt-10">
+                <table class="table-auto w-full border-collapse border border-gray-200">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="border border-gray-200 px-4 py-2">Player Image</th>
+                            <th class="border border-gray-200 px-4 py-2">Player Info</th>
+                        </tr>
+                    </thead>
+                    <tbody id="iniTabel">
+                        <tr class="hover:bg-gray-50">
+                            <td class="border border-gray-200 px-4 py-2">
+                                <img id="logokieu" src="../images/players/player-1.png" alt="" class="w-16 h-16">
+                            </td>
+                            <td class="border border-gray-200 px-4 py-2">
+                                <h2 id="ngaran" class="font-bold">Abdur Rakib</h2>
+                                <p id="posisi">Fullstack</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="section-bottom">
+                    <div class="bottom-part">
+                        <div class="bottom">
+                            <div class="match-left">
+                                <h1 class="match-text">All Highlights <br> Copa America 2021</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero quaerat rem
+                                    suscipit nesciunt. Nulla temporibus saepe ullam minus labore.</p>
+                                <button class="match-button">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="match-right">
+                                <img src="../images/match.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----------------- Bottom Section END ----------------->
+
+
+                <!----------------- Footer Start ----------------->
+                <footer>
+                    <div class="footer">
+                        <div class="footballs">
+                            <div class="football">
+                                <img src="../images/Social Icons/Dribbble.png" alt="">
+                            </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+               
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

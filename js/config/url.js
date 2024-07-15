@@ -1,0 +1,1 @@
+export let urlAPI = "https://uas-bola-919c3c7dac41.herokuapp.com/pemain";
