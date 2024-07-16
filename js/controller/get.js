@@ -1,6 +1,6 @@
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { eusiTabel } from "../../temp/table.js";
-export function ngisianTabel(results) {
+export function isiTabelBolaAwal(results) {
     hapusTabel()
     results.forEach(isiRow);
 }

@@ -1,12 +1,12 @@
-function deleteData(IDHAPUS) {
+function confirmDelete(IDHAPUS) {
     if (confirm("Apakah ingin menghapus data ID " + IDHAPUS + "?")) {
-        konfirmasiDelete(IDHAPUS);
+        deleteData(IDHAPUS);
     }
 }
 
-function konfirmasiDelete(IDHAPUS) {
+function deleteData(IDHAPUS) {
     var pemainId = IDHAPUS;
-    var target_url = " https://uas-bola-919c3c7dac41.herokuapp.com/delete/" + pemainId;
+    var target_url = "https://uas-bola-919c3c7dac41.herokuapp.com/delete/" + pemainId;
 
     var requestOptions = {
         method: 'DELETE',

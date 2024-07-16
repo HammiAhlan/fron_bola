@@ -1,23 +1,25 @@
 import { addInner } from "https://bukulapak.github.io/element/process.js";
-import { eusiBola } from "../../temp/table_bola.js";
-export function ngisiTabel(results) {
-    hapusTabel()
-    results.forEach(isitable);
-}
-function isitable(value){
-    let content = 
-    eusiBola.replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="id">1</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="id">' + value._id + '</td>')
-            .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="nama">John Doe</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="nama">' + value.nama_pemain + '</td>')
-            .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="club">John Doe</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="club">' + value.tim.nama_club + '</td>')
-            .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="liga">John Doe</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="liga">' + value.tim.liga + '</td>')
-            .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="tahun">John Doe</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="tahun">'+ value.tim.tahun_berdiri + '</td>')
-            .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="stadion">John Doe</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="stadion">' + value.tim.stadion + '</td>')
-            .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="manajer">John Doe</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="manajer">' + value.tim.manajer + '</td>')
-            .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="logo"><img src="timmy"></td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="logo"><img src="' + value.tim.logo + '"></td>')
-         
-        addInner("eusitable", content);
+import { isiTabel } from "../../temp/table_bola.js";
+export function isiTableBola(results) {
+    results.forEach(isiRow);
 }
 
-function hapusTabel() {
-    document.getElementById("eusitable").innerHTML = '';
+function isiRow(value) {
+    let content = 
+    isiTabel.replace("#id#", value._id)
+            .replace("#nama#", value.nama_pemain)
+            .replace("#nama_club#", value.tim.nama_club)
+            .replace("#liga#", value.tim.liga)
+            .replace("#tahun_berdiri#", value.tim.tahun_berdiri)
+            .replace("#stadion#", value.tim.stadion)
+            .replace("#manajer#", value.tim.manajer)
+            .replace("#logo#", `<img src="${value.tim.logo}"/>`)
+            .replace("#IDEDIT#", value._id)
+            .replace("#IDHAPUS#", value._id);
+            
+        addInner("isiTabel", content);
 }
+
+
+
+

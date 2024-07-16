@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Update Sepak Bola</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Optional: Add custom styles here */
+    </style>
+    <script defer src="../js/main.js"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div id="subbola" class="bg-white p-8 rounded-lg shadow-md max-w-screen-lg mx-auto w-full">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Formulir Update Sepak Bola</h2>
+    <form id="soccerForm" class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-4">
+        <input type="hidden" id="playerId" name="playerId">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700">Nama Pemain:</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="club" class="block text-gray-700">Club:</label>
+            <input type="text" id="club" name="club" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="liga" class="block text-gray-700">Liga:</label>
+            <input type="text" id="liga" name="liga" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="tahun" class="block text-gray-700">Tahun Berdiri:</label>
+            <input type="text" id="tahun" name="tahun" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="stadion" class="block text-gray-700">Stadion:</label>
+            <input type="text" id="stadion" name="stadion" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="manajer" class="block text-gray-700">Manajer:</label>
+            <input type="text" id="manajer" name="manajer" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="logo" class="block text-gray-700">Logo:</label>
+            <input type="text" id="logo" name="logo" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="berat" class="block text-gray-700">Berat:</label>
+            <input type="text" id="berat" name="berat" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="tanggal_lahir" class="block text-gray-700">Tanggal Lahir:</label>
+            <input type="text" id="tanggal_lahir" name="tanggal_lahir" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="negara" class="block text-gray-700">Negara:</label>
+            <input type="text" id="negara" name="negara" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="no_punggung" class="block text-gray-700">Nomor Punggung:</label>
+            <input type="text" id="no_punggung" name="no_punggung" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="posisi" class="block text-gray-700">Posisi:</label>
+            <input type="text" id="posisi" name="posisi" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="tinggi" class="block text-gray-700">Tinggi:</label>
+            <input type="text" id="tinggi" name="tinggi" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="jumlah_pemain" class="block text-gray-700">Jumlah Pemain:</label>
+            <input type="text" id="jumlah_pemain" name="jumlah_pemain" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="flex justify-between">
+            <button class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" type="button" onclick="window.location.reload();">Cancel</button>
+            <button class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" type="submit">Update</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
