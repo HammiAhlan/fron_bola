@@ -1,9 +1,8 @@
-export let urlPOST = "https://uas-bola-919c3c7dac41.herokuapp.com/insert"
+export let urlPOST = "https://uas-bola-919c3c7dac41.herokuapp.com/insert";
 
-//test
-
+// Function to handle API response
 export function AmbilResponse(result) {
-    console.log(result); //menampilkan response API pada console
-    alert(result.message); //menampilkan response API pada alert
-    window.location.reload(); //reload halaman setelah klik ok pada alert
+    console.log(result); // Display API response in console
+    alert(result.message); // Display API response in an alert
+    window.location.reload(); // Reload page after clicking OK on the alert
 }

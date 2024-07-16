@@ -5,65 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulir Sepak Bola</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="main.js"></script>
+    <script defer src="../js/main.js"></script>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
 <div id="subbola" class="bg-white p-8 rounded-lg shadow-md w-96">
     <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Formulir Sepak Bola</h2>
-    <div class="mb-4">
-        <label for="name" class="block text-gray-700">Nama Pemain:</label>
-        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-    </div>
-    <div class="mb-6">
-        <label for="club" class="block text-gray-700">Club:</label>
-        <input type="text" id="club" name="club" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-    </div>
-    <div class="mb-6">
-        <label for="liga" class="block text-gray-700">Liga:</label>
-        <input type="text" id="liga" name="liga" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-    </div>
-    <div class="mb-6">
-        <label for="tahun" class="block text-gray-700">Tahun Berdiri:</label>
-        <input type="text" id="tahun" name="tahun" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-    </div>
-    <div class="mb-6">
-        <label for="stadion" class="block text-gray-700">Stadion:</label>
-        <input type="text" id="stadion" name="stadion" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-    </div>
-    <div class="flex justify-between">
-        <div class="mb-6">
-            <label for="manajer" class="block text-gray-700">Manajer:</label>
-            <input type="text" id="manajer" name="manajer" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    <form id="soccerForm">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700">Nama Pemain:</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
         <div class="mb-6">
-            <label for="logo" class="block text-gray-700">Logo:</label>
-            <input type="text" id="logo" name="logo" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <label for="club" class="block text-gray-700">Club:</label>
+            <input type="text" id="club" name="club" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
-    </div>
-    <div class="flex justify-between">
-        <button class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" type="button" onclick="window.location.reload();">Cancel</button>
-        <button class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" type="button" id="submit">Insert</button>
-    </div>
-    
-    <script>
-        function insertData() {
-            const namapemain = document.getElementById('name').value;
-            const club = document.getElementById('club').value;
-            const liga = document.getElementById('liga').value;
-            const tahun = document.getElementById('tahun').value;
-            const stadion = document.getElementById('stadion').value;
-            const manajer = document.getElementById('manajer').value;
-            const logo = document.getElementById('logo').value;
-    
-            if (namapemain && club && liga && tahun && stadion && manajer && logo) {
-                // Ganti alert ini dengan logika untuk mengirim data ke server atau melakukan operasi insert lainnya
-                alert('Data akan diinsert:\nNama Pemain: ' + namapemain + '\nClub: ' + club + '\nLiga: ' + liga + '\nTahun Berdiri: ' + tahun + '\nStadion: ' + stadion + '\nManajer: ' + manajer + '\nLogo: ' + logo);
-            } else {
-                alert('Harap isi semua field!');
-            }
-        }
-    </script>
-    
+        <div class="mb-6">
+            <label for="liga" class="block text-gray-700">Liga:</label>
+            <input type="text" id="liga" name="liga" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-6">
+            <label for="tahun" class="block text-gray-700">Tahun Berdiri:</label>
+            <input type="text" id="tahun" name="tahun" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-6">
+            <label for="stadion" class="block text-gray-700">Stadion:</label>
+            <input type="text" id="stadion" name="stadion" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="flex justify-between">
+            <div class="mb-6">
+                <label for="manajer" class="block text-gray-700">Manajer:</label>
+                <input type="text" id="manajer" name="manajer" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="mb-6">
+                <label for="logo" class="block text-gray-700">Logo:</label>
+                <input type="text" id="logo" name="logo" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+        </div>
+        <div class="flex justify-between">
+            <button class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" type="button" onclick="window.location.reload();">Cancel</button>
+            <button class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" type="submit">Insert</button>
+        </div>
+    </form>
+</div>
+
+<script>
+function insertData() {
+    const namapemain = document.getElementById('name').value;
+    const club = document.getElementById('club').value;
+    const liga = document.getElementById('liga').value;
+    const tahun = document.getElementById('tahun').value;
+    const stadion = document.getElementById('stadion').value;
+    const manajer = document.getElementById('manajer').value;
+    const logo = document.getElementById('logo').value;
+
+    if (namapemain && club && liga && tahun && stadion && manajer && logo) {
+        const data = {
+            namapemain,
+            club,
+            liga,
+            tahun,
+            stadion,
+            manajer,
+            logo
+        };
+        fetch(urlPOST, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => AmbilResponse(result))
+        .catch(error => console.error('Error:', error));
+    } else {
+        alert('Harap isi semua field!');
+    }
+}
+</script>
+
 </body>
 </html>
