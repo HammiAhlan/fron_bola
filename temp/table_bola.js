@@ -11,7 +11,7 @@ export let eusiBola =
                 <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="logo"><img src="timmy"></td>
                 <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
                     <button class="text-white bg-green-500 hover:bg-green-700 py-1 px-3 rounded" id="edit">Edit</button>
-                    <button class="text-white bg-red-500 hover:bg-red-700 py-1 px-3 rounded" id="delete">Delete</button>
+                    <button type ="button" id="delete" onclick="deleteData"('#IDHAPUS')">Delete</button>
                 </td>
             </tr>
 `

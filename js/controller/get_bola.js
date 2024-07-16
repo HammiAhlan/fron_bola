@@ -14,6 +14,7 @@ function isitable(value){
             .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="stadion">John Doe</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="stadion">' + value.tim.stadion + '</td>')
             .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="manajer">John Doe</td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="manajer">' + value.tim.manajer + '</td>')
             .replace('<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="logo"><img src="timmy"></td>', '<td class="px-6 py-4 whitespace-nowrap border-b border-gray-200" id="logo"><img src="' + value.tim.logo + '"></td>')
+         
         addInner("eusitable", content);
 }
 
