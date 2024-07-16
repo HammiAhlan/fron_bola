@@ -8,7 +8,6 @@
     <style>
         /* Optional: Add custom styles here */
     </style>
-    <script defer src="../js/main.js"></script>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
@@ -17,32 +16,16 @@
     <form id="soccerForm" class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-4">
         <input type="hidden" id="playerId" name="playerId">
         <div class="mb-4">
-            <label for="name" class="block text-gray-700">Nama Pemain:</label>
-            <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <label for="nama_pemain" class="block text-gray-700">Nama Pemain:</label>
+            <input type="text" id="nama_pemain" name="nama_pemain" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
         <div class="mb-4">
-            <label for="club" class="block text-gray-700">Club:</label>
-            <input type="text" id="club" name="club" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <label for="posisi" class="block text-gray-700">Posisi:</label>
+            <input type="text" id="posisi" name="posisi" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
         <div class="mb-4">
-            <label for="liga" class="block text-gray-700">Liga:</label>
-            <input type="text" id="liga" name="liga" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-        </div>
-        <div class="mb-4">
-            <label for="tahun" class="block text-gray-700">Tahun Berdiri:</label>
-            <input type="text" id="tahun" name="tahun" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-        </div>
-        <div class="mb-4">
-            <label for="stadion" class="block text-gray-700">Stadion:</label>
-            <input type="text" id="stadion" name="stadion" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-        </div>
-        <div class="mb-4">
-            <label for="manajer" class="block text-gray-700">Manajer:</label>
-            <input type="text" id="manajer" name="manajer" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-        </div>
-        <div class="mb-4">
-            <label for="logo" class="block text-gray-700">Logo:</label>
-            <input type="text" id="logo" name="logo" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <label for="tinggi" class="block text-gray-700">Tinggi:</label>
+            <input type="text" id="tinggi" name="tinggi" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
         <div class="mb-4">
             <label for="berat" class="block text-gray-700">Berat:</label>
@@ -61,22 +44,44 @@
             <input type="text" id="no_punggung" name="no_punggung" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
         <div class="mb-4">
-            <label for="posisi" class="block text-gray-700">Posisi:</label>
-            <input type="text" id="posisi" name="posisi" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <label for="nama_club" class="block text-gray-700">Nama Club:</label>
+            <input type="text" id="nama_club" name="nama_club" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
         <div class="mb-4">
-            <label for="tinggi" class="block text-gray-700">Tinggi:</label>
-            <input type="text" id="tinggi" name="tinggi" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <label for="liga" class="block text-gray-700">Liga:</label>
+            <input type="text" id="liga" name="liga" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="tahun_berdiri" class="block text-gray-700">Tahun Berdiri:</label>
+            <input type="text" id="tahun_berdiri" name="tahun_berdiri" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="stadion" class="block text-gray-700">Stadion:</label>
+            <input type="text" id="stadion" name="stadion" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-4">
+            <label for="manajer" class="block text-gray-700">Manajer:</label>
+            <input type="text" id="manajer" name="manajer" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
         <div class="mb-4">
             <label for="jumlah_pemain" class="block text-gray-700">Jumlah Pemain:</label>
             <input type="text" id="jumlah_pemain" name="jumlah_pemain" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
-        <div class="flex justify-between">
-            <button class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" type="button" onclick="window.location.reload();">Cancel</button>
-            <button class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" type="submit">Update</button>
+        <div class="mb-4">
+            <label for="logo" class="block text-gray-700">Logo:</label>
+            <input type="text" id="logo" name="logo" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
         </div>
+        <div class="flex justify-between">
+            <button class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" type="button" onclick="window.location.reload();">Cancel</button> 
+            <div class="w-full md:w-auto p-1.5">
+                <button id="button" class="flex flex-wrap justify-center w-full px-4 py-2 bg-blue-500 hover:bg-green-600 font-medium text-sm text-white border border-green-500 rounded-md shadow-button"> <p>Update</p> </button>
+        </div>
+        <div>
     </form>
 </div>
+<script type="module" src="../js/fetch_edit.js"></script>
+<script type="module" src="../js/controller/put.js"></script>
+
+
 </body>
 </html>
