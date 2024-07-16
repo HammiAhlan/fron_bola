@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Sepak Bola</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Formulir Sepak Bola</h2>
+    <div class="mb-4">
+        <label for="name" class="block text-gray-700" id="namapemain">Nama Pemain:</label>
+        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    </div>
+    <div class="mb-4">
+        <label for="age" class="block text-gray-700" id="nama_club">Club:</label>
+        <input type="number" id="age" name="age" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    </div>
+    <div class="mb-6">
+        <label for="team" class="block text-gray-700" id="liga">Liga:</label>
+        <input type="text" id="team" name="team" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    </div>
+    <div class="mb-6">
+        <label for="team" class="block text-gray-700" id="tahun">Tahun Berdiri:</label>
+        <input type="text" id="team" name="team" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    </div>
+    <div class="mb-6">
+        <label for="team" class="block text-gray-700" id="stadion">Stadion:</label>
+        <input type="text" id="team" name="team" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    </div>
+    <div class="flex justify-between">
+        <div class="mb-6">
+            <label for="team" class="block text-gray-700" id="manajer">Manajer</label>
+            <input type="text" id="team" name="team" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div class="mb-6">
+            <label for="team" class="block text-gray-700" id="logo">Logo:</label>
+            <input type="text" id="team" name="team" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <button class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" type="button" onclick="window.location.reload();">Cancel</button>
+        <button class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" type="button" onclick="saveForm();">Save</button>
+    </div>
+</div>
+
+<script>
+    function saveForm() {
+        const name = document.getElementById('name').value;
+        const age = document.getElementById('age').value;
+        const team = document.getElementById('team').value;
+
+        if (name && age && team) {
+            alert('Data tersimpan:\nNama: ' + name + '\nUmur: ' + age + '\nTim: ' + team);
+        } else {
+            alert('Harap isi semua field!');
+        }
+    }
+</script>
+
+</body>
+</html>
